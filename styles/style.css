@@ -96,3 +96,51 @@ nav ul li a:hover{
 main {
     padding: 20px;
 }
+/* controls the spacing outside the bottom edge of an element.*/
+.about-me, .my-skills, .experiences {
+    margin-bottom: 40px;
+}
+/* Styling for h2 */
+.about-me h2, .my-skills h2, .experiences h2 {
+    color: #e205e6;
+    font-size: 20px;
+    margin-bottom: 10px;/* Set bottom margin to 10 pixels */
+}
+
+.my-skills li, .experiences li {
+    margin-bottom: 8px;
+}
+
+.my-projects {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.my-projects h2 {
+    color: #e205e6;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.my-projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.my-projects li {
+    margin-bottom: 30px;
+}
+
+.my-projects h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.my-projects p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
