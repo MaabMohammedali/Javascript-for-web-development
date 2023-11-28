@@ -1,3 +1,16 @@
+/* Apply the following styles to all elements in the document */
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*  Remove underlines from all anchor (link) elements: for example in Home, about, ... */
+a{
+    text-decoration: none;
+}
+/* Styling for the general container */
 .general{
     height: 100vh;
     width: 100vw;
@@ -21,4 +34,65 @@ html {
     font-weight: bold;
     color: #e205e6;
     cursor: pointer;;
+}
+.logo::first-letter{
+    font-style:inherit;
+    font-size: 30px;
+    color: #000;
+}
+/* Styling for navigation list items in the navigation bar */
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: #131313;
+    position: relative;
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: #e205e6;
+}
+    
+.detail{
+    position: absolute;
+    top:35%;
+    left:8%;
+}
+/* Styling for the heading */
+.detail h1{
+    color:black;
+    font-size: 50px;
+    font-weight: 700; 
+    line-height: 70px;
+
+}
+
+.detail h1 span{
+    color:#e205e6;
+}
+.detail p{
+    color:#1f1f2f;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.image img{
+    display:block;
+    width: 100%;
+    height: auto;
+}
+.image{
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+}
+
+main {
+    padding: 20px;
 }
