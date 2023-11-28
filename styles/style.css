@@ -1,0 +1,24 @@
+.general{
+    height: 100vh;
+    width: 100vw;
+    background: var(#dbdee4) ;
+}
+/* Styling for the navigation bar */
+nav{
+    display: flex; 
+    justify-content: space-between; /* to make the space equal*/
+    align-items: center;
+    padding: 30px 100px;
+}
+/*
+html {
+    scroll-behavior: smooth;
+}
+*/
+.logo{
+    font-style: italic;
+    font: size 30px;
+    font-weight: bold;
+    color: #e205e6;
+    cursor: pointer;;
+}
