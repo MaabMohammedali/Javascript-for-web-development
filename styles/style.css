@@ -1,0 +1,228 @@
+/* Apply the following styles to all elements in the document */
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*  Remove underlines from all anchor (link) elements: for example in Home, about, ... */
+a{
+    text-decoration: none;
+}
+/* Styling for the general container */
+.general{
+    height: 100vh;
+    width: 100vw;
+    background: var(#dbdee4) ;
+}
+/* Styling for the navigation bar */
+nav{
+    display: flex; 
+    justify-content: space-between; /* to make the space equal*/
+    align-items: center;
+    padding: 30px 100px;
+}
+/*
+html {
+    scroll-behavior: smooth;
+}
+*/
+.logo{
+    font-style: italic;
+    font: size 30px;
+    font-weight: bold;
+    color: #e205e6;
+    cursor: pointer;;
+}
+.logo::first-letter{
+    font-style:inherit;
+    font-size: 30px;
+    color: #000;
+}
+/* Styling for navigation list items in the navigation bar */
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: #131313;
+    position: relative;
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: #e205e6;
+}
+    
+.detail{
+    position: absolute;
+    top:35%;
+    left:8%;
+}
+/* Styling for the heading */
+.detail h1{
+    color:black;
+    font-size: 50px;
+    font-weight: 700; 
+    line-height: 70px;
+
+}
+
+.detail h1 span{
+    color:#e205e6;
+}
+.detail p{
+    color:#1f1f2f;
+    font-size: 18px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.image img{
+    display:block;
+    width: 100%;
+    height: auto;
+}
+.image{
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+}
+
+main {
+    padding: 20px;
+}
+/* controls the spacing outside the bottom edge of an element.*/
+.about-me, .my-skills, .experiences {
+    margin-bottom: 40px;
+}
+/* Styling for h2 */
+.about-me h2, .my-skills h2, .experiences h2 {
+    color: #e205e6;
+    font-size: 20px;
+    margin-bottom: 10px;/* Set bottom margin to 10 pixels */
+}
+
+.my-skills li, .experiences li {
+    margin-bottom: 8px;
+}
+
+.my-projects {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.my-projects h2 {
+    color: #e205e6;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.my-projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.my-projects li {
+    margin-bottom: 30px;
+}
+
+.my-projects h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.my-projects p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #333; 
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+/*
+.general {
+    position: relative;
+}
+*/
+.social-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.social-icons p {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.email-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.quick-links {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 8px;
+}
+
+.quick-links p {
+    margin-bottom: 5px;
+}
+
+.quick-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    text-align: center;
+}
+.Favorites  {
+    font-size: 20px;
+    text-align: center;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+.gallery img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
